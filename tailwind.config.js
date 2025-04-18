@@ -3,10 +3,10 @@
 module.exports = {
     darkMode: ["class"],
     content: [
-        "./pages/**/*.{js,jsx}",
-        "./components/**/*.{js,jsx}",
-        "./app/**/*.{js,jsx}",
-        "./src/**/*.{js,jsx}",
+        "./pages/**/*.{js,jsx,tsx}",
+        "./components/**/*.{js,jsx,tsx}",
+        "./app/**/*.{js,jsx,tsx}",
+        "./src/**/*.{js,jsx,tsx}",
     ],
     prefix: "",
     theme: {
@@ -39,8 +39,12 @@ module.exports = {
                 "accordion-up": "accordion-up 0.2s ease-out",
             },
             colors: {
-                primary: '#1E40AF',
+                primary: '#1c1c22',
                 secondary: '#F59E0B',
+                accent: {
+                    DEFAULT: '#00ff99',
+                    hover: '#00e187',
+                }
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
